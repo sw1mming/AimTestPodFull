@@ -11,7 +11,7 @@ import Foundation
 extension NSObject {
     static public func className() -> String {
         var className = String(describing: self)
-        
+
         if className.contains("<") {
             let components = className.components(separatedBy: "<")
             
